@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bee Bookmarks
+{% endblock title %}
+
+{% block style %}
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+
+
+
+/*
+ * Base structure
+ */
+
+
+
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+{% endblock style %}
+
+
+{% block content %}
+
+<div class="cover-container text-center d-flex h-100 p-3 mx-auto flex-column">
+
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading mt-5">Bee Social Bookmarks</h1>
+      <p class="lead">Bee Bookmarks social application that will allow users to share images
+that they find on the Internet.</p>
+      <p class="lead">
+        <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+      </p>
+    </main>
+
+   
+  </div> 
+
+{% endblock content %}
