@@ -7,6 +7,7 @@ urlpatterns = [
     #path('login/',views.user_login,name='login'),
 
     path('',views.dashboard,name='dashboard'),
-    path('',include('django.contrib.auth.urls'))
+    path('',include('django.contrib.auth.urls')),
+    path('<user>/settings/',views.settings,name='settings'),
 
 ]

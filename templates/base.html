@@ -45,6 +45,9 @@
             <li class="nav-item {% if section == 'people' %}selected{% endif %}">
               <a class="nav-link" href="#">People</a>
             </li>
+            <li class="nav-item {% if section == 'settings' %}selected{% endif %}">
+              <a class="nav-link" href="{% url 'settings' user.get_username %}">Settings</a>
+            </li>
             {% endif %}
           </ul>
           <ul class="navbar-nav ml-auto">
