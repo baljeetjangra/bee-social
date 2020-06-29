@@ -19,6 +19,9 @@
     padding: 15px;
     margin: 0 auto;
   }
+  li{
+    margin:0 5px;
+  }
         {% block style %}
         {% endblock style %}
     </style>
@@ -56,6 +59,10 @@
               <p class="text-white">Hello {{ request.user.first_name }},  <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
               {% else %}
               <a class="btn btn-primary" href="{% url 'login' %}">Login</a></p>
+              
+            </li>
+            <li>
+              <a class="btn btn-primary" href="{% url 'register' %}">Sign up</a>
             </li>
             {% endif %}
             </ul>
